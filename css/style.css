@@ -30,7 +30,7 @@ font-weight: 700;
 font-size: 26px;
 line-height: 31px;
 /* identical to box height */
-color: darkgrey;
+color: #FFFFFF;
 letter-spacing: 0.03em;
 }
 
@@ -98,18 +98,6 @@ line-height: 16px;
 letter-spacing: 0.02em;
 
 color:black
-}
-
-.hero-title {
-  font-family: 'Roboto';
-font-style: normal;
-font-weight: 900;
-font-size: 44px;
-line-height: 60px;
-
-text-align: center;
-letter-spacing: 0.06em;
-text-transform: uppercase;
 }
 
 .hero-button {
@@ -245,4 +233,27 @@ color:darkgrey
 
 .footer {
   background-color: #212121;
+}
+
+.hero-section {
+  background: #2F303A;
+}
+
+.hero-title {
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 900;
+font-size: 44px;
+line-height: 60px;
+/* or 136% */
+
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+
+.team {
+  background: #F5F4FA;
 }
