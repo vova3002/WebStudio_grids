@@ -11,10 +11,14 @@ color: #2196F3;
 }
 
 .container {
-display: flex;
-align-items: center;
+  
 }
+
 /*Header-section*/
+
+.header {
+  display: flex;
+}
 
 .header-logo {
 font-family: 'Raleway';
@@ -25,6 +29,10 @@ line-height: 31px;
 
 letter-spacing: 0.03em;
 color: black;
+}
+
+.header-pages {
+display: flex;
 }
 
 .header-link {
@@ -68,9 +76,8 @@ color: #757575;
   line-height: 30px;
   
   background-color: #757575;
-  color: #2F303A;
+  color: #2F303A
 }
-
 
 .hero-section {
   background: #2F303A;
@@ -89,7 +96,6 @@ text-transform: uppercase;
 
 color: #FFFFFF;
 }
-
 
 .hero-button:hover {
   background-color: #2196F3;
@@ -140,16 +146,22 @@ letter-spacing: 0.03em;
 color: #212121;
 }
 
-.work-img {
+.work-list {
   display: flex;
+  padding-left: 10px;
+  align-content: space-around;
 }
 
 /*Work-section-end*/
 
 /*Team-section*/
 
-.team {
+.team-section {
   background: #F5F4FA;
+}
+
+.team-list {
+  display: flex;
 }
 
 .team-title {
@@ -194,6 +206,10 @@ color: #757575;
 
 .footer {
   background-color: #212121;
+}
+
+.footer-section {
+  display: flex;
 }
 
 .footer-address {
@@ -241,7 +257,7 @@ color: #2196F3;
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
-  /* identical to box height */
+
   color: #FFFFFF;
   letter-spacing: 0.03em;
   }
