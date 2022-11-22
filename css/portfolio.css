@@ -1,13 +1,13 @@
 .Web {
   font-family: 'Raleway';
-font-style: normal;
-font-weight: 700;
-font-size: 26px;
-line-height: 31px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
 
-letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
 
-color: #2196F3;
+  color: #2196F3;
 }
 
 .container {
@@ -19,29 +19,29 @@ color: #2196F3;
 }
 
 /*Header-section*/
- 
+
 .header-logo {
   font-family: 'Raleway';
-font-style: normal;
-font-weight: 700;
-font-size: 26px;
-line-height: 31px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
 
-letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
 
-color: black;
+  color: black;
 }
 
 
 .header-link {
   font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.02em;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
 
-color: #212121;
+  color: #212121;
 }
 
 
@@ -52,13 +52,13 @@ color: #212121;
 
 .header-contact {
   font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.02em;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
 
-color: #757575;
+  color: #757575;
 }
 
 
@@ -69,13 +69,13 @@ color: #757575;
 
 .header-number {
   font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.02em;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
 
-color: #757575;
+  color: #757575;
 }
 
 /*Header-section-end*/
@@ -88,16 +88,16 @@ color: #757575;
 
 .buttons-item {
   font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 26px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
 
-display: flex;
-text-align: center;
-letter-spacing: 0.03em;
+  display: flex;
+  text-align: center;
+  letter-spacing: 0.03em;
 
-color: #F5F4FA;
+  color: #F5F4FA;
 }
 
 
@@ -108,27 +108,27 @@ color: #F5F4FA;
 
 .poster-text {
   font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 36px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
 
-letter-spacing: 0.06em;
+  letter-spacing: 0.06em;
 
-color: #212121;
+  color: #212121;
 }
 
 
 .poster-description {
   font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
 
-letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
 
-color: #757575;
+  color: #757575;
 }
 
 
@@ -144,40 +144,40 @@ color: #757575;
 
 .footer-Web {
   font-family: 'Raleway';
-font-style: normal;
-font-weight: 700;
-font-size: 26px;
-line-height: 31px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
 
-letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
 
-color: #2196F3;
+  color: #2196F3;
 }
 
 
 .footer-logo {
   font-family: 'Raleway';
-font-style: normal;
-font-weight: 700;
-font-size: 26px;
-line-height: 31px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
 
-letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
 
-color: #FFFFFF;
+  color: #FFFFFF;
 }
 
 
 .footer-address {
   font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
 
-letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
 
-color: #FFFFFF;
+  color: #FFFFFF;
 }
 
 
@@ -188,13 +188,14 @@ color: #FFFFFF;
 
 .footer-contact {
   font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
 
-letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
 
-color: darkgrey
+  color: darkgrey
 }
+
 /*Footer-section-end*/
