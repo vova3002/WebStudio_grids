@@ -1,15 +1,10 @@
+/*Header-section-start*/
 .header .container {
   height: 80px;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-}
-
-.header-pages {
-
-  display: flex;
-  justify-content: space-evenly;
 }
 
 .Web {
@@ -25,27 +20,27 @@
   margin-right: 93px;
 }
 
-.header-contact {
-  display: flex;
-  justify-content: space-evenly;
-  flex: 2;
-}
-
-/*Header-section*/
-
-.container:nth-child(1) {
-  display: flex;
-}
-
 .header-logo {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
-
   letter-spacing: 0.03em;
   color: black;
+}
+
+.header-pages {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header-item {
+  margin-left: 55px;
+}
+
+.header-item:nth-child(2) {
+  margin-left: 50px;
 }
 
 .header-link {
@@ -55,7 +50,6 @@
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-
   color: #212121;
 }
 
@@ -66,6 +60,11 @@
 .header-contacts {
   display: flex;
   margin-left: auto;
+  align-items: center;
+}
+
+.header-contacts .header-item {
+  display: flex;
 }
 
 .header-contact {
@@ -78,16 +77,9 @@
   color: #757575;
 }
 
-.header-item:nth-child(2) {
-  margin-left: 50px;
-}
 
 .header-contact:hover {
   color: #2196F3;
-}
-
-.header-list:not(:first-child) {
-  margin-left: 55px;
 }
 
 /*Header-section-end*/
