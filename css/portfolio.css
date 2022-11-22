@@ -98,9 +98,9 @@
 }
 
 .buttons-list {
-display: flex;
-flex-direction: row;
-justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .buttons-items:hover {
@@ -133,6 +133,7 @@ justify-content: center;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: center;
 }
 
 .poster-item {
