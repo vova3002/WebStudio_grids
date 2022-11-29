@@ -84,7 +84,7 @@
 
 /*Header-section-end*/
 
-/*Hero-section*/
+/*Hero-section-start*/
 
 .hero-button {
   font-family: 'Roboto';
@@ -106,6 +106,7 @@
   justify-content: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image:-moz-linear-gradient()
 }
 
 .hero-section {
@@ -133,7 +134,7 @@
 
 /*Hero-section-end*/
 
-/*Qualities-section*/
+/*Qualities-section-start*/
 
 .qualities-title {
   font-family: 'Roboto';
@@ -180,7 +181,7 @@
 
 /*Qualities-section-end*/
 
-/*Work-section*/
+/*Work-section-start*/
 
 .work-title {
   font-family: 'Roboto';
@@ -219,7 +220,7 @@
 
 /*Work-section-end*/
 
-/*Team-section*/
+/*Team-section-start*/
 
 .team-list {
   display: flex;
@@ -287,7 +288,21 @@
 
 /*Team-section-end*/
 
-/*Footer-section*/
+/*Client-section-start*/
+
+.client-list {
+  display: flex;
+  gap: 30px;
+}
+
+.client-link {
+  height: 90px;
+  width: 170px;
+}
+
+/*Client-section-end*/
+
+/*Footer-section-start*/
 
 .footer {
   background: #212121
