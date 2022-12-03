@@ -292,9 +292,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-
   letter-spacing: 0.03em;
-
   color: #757575;
 }
 
@@ -311,6 +309,50 @@
 }
 
 /*Team-section-end*/
+
+/*Client-section-start*/
+
+.section-client .container {
+  margin-top: 94px;
+  margin-bottom: 94px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-list {
+  display: flex;
+}
+
+.client-item{
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  padding: 41px 42.6px;
+  margin-left: 30px;
+}
+
+.client-svg {
+  background: url(../img/img-2/symbol-defs.svg#icon-client-1) no-repeat;
+}
+
+.client-svg {
+  width: 170px;
+  height: 90px;
+  background: url(../img/img-2/symbol-defs.svg#icon-client-1) no-repeat;
+}
+
+.client-link {
+  cursor: pointer;
+}
+
+.client-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+}
+/*Client-section-end*/
 
 /*Footer-section-start*/
 
