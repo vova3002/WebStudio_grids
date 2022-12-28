@@ -33,22 +33,21 @@
             </li>
           </ul>
           <ul class="header-contacts">
-            <li>
-                <a href="/" class="header-link">
+            <li class="header-item">
+                <a href="/" class="header-link"></a>
                 <svg class="header-svg">
-                <use href="./img/img-2/symbol-defs.svg#icon-email-2">
+                <use href="./img/img-2/symbol-defs.svg#icon-email-2" class="header-svg-use">
                 </use>
                 </svg>
                 <a class="header-contact" href="info@devstudio.com">info@devstudio.com</a>
-              </a>
             </li>
             <li class="header-item">
-              <a href="/" class="header-link">
-                <svg class="header-svg">
-                <use href="./img/img-2/symbol-defs.svg#icon-telephone">
-                </use>
-                </svg>
-              <a class="header-contact" href="tel:380961111111">+38 096 111 11 11</a>
+              <a href="/" class="header-link"></a>
+              <svg class="header-svg">
+              <use href="./img/img-2/symbol-defs.svg#icon-telephone" class="header-svg-use">
+              </use>
+              </svg>
+              <a class="header-contact" href="+38 096 111 11 11">+38 096 111 11 11</a>
             </li>
           </ul>
         </div>
@@ -59,6 +58,27 @@
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
           <button class="hero-button" type="button">Замовити послугу</button>
+          <button class="overlay-button"></button>
+          <script>
+            const refs = {
+              openModalBtn: document.querySelector("[data-open-modal]"),
+              closeModalBtn: document.querySelector("[data-close-modal]"),
+              backdrop: document.querySelector("[data-backdrop]"),
+            };
+      
+            refs.openModalBtn.addEventListener("click", toggleModal);
+            refs.closeModalBtn.addEventListener("click", toggleModal);
+      
+            refs.backdrop.addEventListener("click", logBackdropClick);
+      
+            function toggleModal() {
+              refs.backdrop.classList.toggle("is-hidden");
+            }
+      
+            function logBackdropClick() {
+              console.log("Це клік в бекдроп");
+            }
+          </script>
         </div>
       </section>
       <section class="qualities-section">
@@ -111,6 +131,7 @@
                 height="150"
                 alt="html"
               />
+              <h3 class="work-text">Десктопні додатки</h3>
             </li>
             <li class="work-item">
               <img
@@ -120,6 +141,7 @@
                 height="150"
                 alt="css"
               />
+              <h3 class="work-text">Мобільні додатки</h3>
             </li>
             <li class="work-item">
               <img
@@ -129,6 +151,7 @@
                 height="150"
                 alt="javaScript"
               />
+              <h3 class="work-text">Дизайнерські рішення</h3>
             </li>
           </ul>
         </div>
@@ -151,7 +174,7 @@
                 <li class="team-svg-item">
                   <a href="/" class="team-link">
                     <svg class="team-svg">
-                    <use href="./img/img-2/symbol-defs.svg#icon-instagram">
+                    <use href="./img/img-2/symbol-defs.svg#icon-instagram" class="team-svg-use">
                     </use>
                     </svg>
                   </a>
@@ -159,7 +182,7 @@
                 <li class="team-svg-item">
                   <a href="/" class="team-link">
                     <svg class="team-svg">
-                    <use href="./img/img-2/symbol-defs.svg#icon-twitter">
+                    <use href="./img/img-2/symbol-defs.svg#icon-twitter" class="team-svg-use">
                     </use>
                     </svg>
                   </a>
@@ -167,7 +190,7 @@
                 <li class="team-svg-item">
                   <a href="/" class="team-link">
                     <svg class="team-svg">
-                      <use href="./img/img-2/symbol-defs.svg#icon-facebook">
+                      <use href="./img/img-2/symbol-defs.svg#icon-facebook" class="team-svg-use">
                       </use>
                       </svg>
                   </a>
@@ -175,7 +198,7 @@
                 <li class="team-svg-item">
                   <a href="/" class="team-link">
                     <svg class="team-svg">
-                    <use href="./img/img-2/symbol-defs.svg#icon-linkedin">
+                    <use href="./img/img-2/symbol-defs.svg#icon-linkedin" class="team-svg-use">
                     </use>
                     </svg>
                   </a>
@@ -195,7 +218,7 @@
                 <li class="team-svg-item">
                   <a href="/" class="team-link">
                     <svg class="team-svg">
-                    <use href="./img/img-2/symbol-defs.svg#icon-instagram">
+                    <use href="./img/img-2/symbol-defs.svg#icon-instagram" class="team-svg-use">
                     </use>
                     </svg>
                   </a>
@@ -203,7 +226,7 @@
                 <li class="team-svg-item">
                   <a href="/" class="team-link">
                     <svg class="team-svg">
-                    <use href="./img/img-2/symbol-defs.svg#icon-twitter">
+                    <use href="./img/img-2/symbol-defs.svg#icon-twitter" class="team-svg-use">
                     </use>
                     </svg>
                   </a>
@@ -211,7 +234,7 @@
                 <li class="team-svg-item">
                   <a href="/" class="team-link">
                     <svg class="team-svg">
-                    <use href="./img/img-2/symbol-defs.svg#icon-facebook">
+                    <use href="./img/img-2/symbol-defs.svg#icon-facebook" class="team-svg-use">
                     </use>
                     </svg>
                   </a>
@@ -219,7 +242,7 @@
                 <li class="team-svg-item">
                   <a href="/" class="team-link">
                     <svg class="team-svg">
-                    <use href="./img/img-2/symbol-defs.svg#icon-linkedin">
+                    <use href="./img/img-2/symbol-defs.svg#icon-linkedin" class="team-svg-use">
                     </use>
                     </svg>
                   </a>
@@ -239,7 +262,7 @@
                   <li class="team-svg-item">
                     <a href="/" class="team-link">
                       <svg class="team-svg">
-                      <use href="./img/img-2/symbol-defs.svg#icon-instagram">
+                      <use href="./img/img-2/symbol-defs.svg#icon-instagram" class="team-svg-use">
                       </use>
                       </svg>
                     </a>
@@ -247,7 +270,7 @@
                   <li class="team-svg-item">
                     <a href="/" class="team-link">
                       <svg class="team-svg">
-                      <use href="./img/img-2/symbol-defs.svg#icon-twitter">
+                      <use href="./img/img-2/symbol-defs.svg#icon-twitter" class="team-svg-use">
                       </use>
                       </svg>
                     </a>
@@ -255,7 +278,7 @@
                   <li class="team-svg-item">
                     <a href="/" class="team-link">
                       <svg class="team-svg">
-                        <use href="./img/img-2/symbol-defs.svg#icon-facebook">
+                        <use href="./img/img-2/symbol-defs.svg#icon-facebook" class="team-svg-use">
                         </use>
                         </svg>
                     </a>
@@ -263,7 +286,7 @@
                   <li class="team-svg-item">
                     <a href="/" class="team-link">
                       <svg class="team-svg">
-                      <use href="./img/img-2/symbol-defs.svg#icon-linkedin">
+                      <use href="./img/img-2/symbol-defs.svg#icon-linkedin" class="team-svg-use">
                       </use>
                       </svg>
                     </a>
@@ -283,7 +306,7 @@
                 <li class="team-svg-item">
                   <a href="/" class="team-link">
                     <svg class="team-svg">
-                    <use href="./img/img-2/symbol-defs.svg#icon-instagram">
+                    <use href="./img/img-2/symbol-defs.svg#icon-instagram" class="team-svg-use">
                     </use>
                     </svg>
                   </a>
@@ -291,7 +314,7 @@
                 <li class="team-svg-item">
                   <a href="/" class="team-link">
                     <svg class="team-svg">
-                    <use href="./img/img-2/symbol-defs.svg#icon-twitter">
+                    <use href="./img/img-2/symbol-defs.svg#icon-twitter" class="team-svg-use">
                     </use>
                     </svg>
                   </a>
@@ -299,7 +322,7 @@
                 <li class="team-svg-item">
                   <a href="/" class="team-link">
                     <svg class="team-svg">
-                      <use href="./img/img-2/symbol-defs.svg#icon-facebook">
+                      <use href="./img/img-2/symbol-defs.svg#icon-facebook" class="team-svg-use">
                       </use>
                       </svg>
                   </a>
@@ -307,7 +330,7 @@
                 <li class="team-svg-item">
                   <a href="/" class="team-link">
                     <svg class="team-svg">
-                    <use href="./img/img-2/symbol-defs.svg#icon-linkedin">
+                    <use href="./img/img-2/symbol-defs.svg#icon-linkedin" class="team-svg-use">
                     </use>
                     </svg>
                   </a>
@@ -323,42 +346,42 @@
                 <li class="client-item">
                     <a href="/" class="client-link">
                         <svg class="client-svg">
-                        <use href="./img/img-2/symbol-defs.svg#icon-client-1"></use>
+                        <use href="./img/img-2/symbol-defs.svg#icon-client-1" class="client-svg-use"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="client-item">
                     <a href="/" class="client-link">
                         <svg class="client-svg">
-                        <use href="./img/img-2/symbol-defs.svg#icon-client-2"></use>
+                        <use href="./img/img-2/symbol-defs.svg#icon-client-2" class="client-svg-use"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="client-item">
                     <a href="/" class="client-link">
                         <svg class="client-svg">
-                        <use href="./img/img-2/symbol-defs.svg#icon-client-3"></use>
+                        <use href="./img/img-2/symbol-defs.svg#icon-client-3" class="client-svg-use"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="client-item">
                     <a href="/" class="client-link">
                         <svg class="client-svg">
-                        <use href="./img/img-2/symbol-defs.svg#icon-client-4"></use>
+                        <use href="./img/img-2/symbol-defs.svg#icon-client-4" class="client-svg-use"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="client-item">
                     <a href="/" class="client-link">
                         <svg class="client-svg">
-                        <use href="./img/img-2/symbol-defs.svg#icon-client-5"></use>
+                        <use href="./img/img-2/symbol-defs.svg#icon-client-5" class="client-svg-use"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="client-item">
                     <a href="/" class="client-link">
                         <svg class="client-svg">
-                        <use href="./img/img-2/symbol-defs.svg#icon-client-4"></use>
+                        <use href="./img/img-2/symbol-defs.svg#icon-client-6" class="client-svg-use"></use>
                         </svg>
                     </a>
                 </li>
@@ -369,19 +392,21 @@
     <footer class="footer">
       <section class="footer-section">
         <div class="container">
-          <h2 class="footer-Web">Web<span class="footer-logo">Studio</span></h2>
-          <address class="footer-address">
-            м. Київ, пр-т Лесі Українки, 26
-          </address>
-          <ul class="footer-list">
-            <li class="footer-item">
-              <a class="footer-contact" href="info@devstudio.com"
-                >info@devstudio.com</a>
-            </li>
-            <li class="footer-item">
-              <a class="footer-contact" href="tel:380961111111"
-                >+38 096 111 11 11</a>
-            </li>
+          <div>
+            <h2 class="footer-Web">Web<span class="footer-logo">Studio</span></h2>
+            <address class="footer-address">м. Київ, пр-т Лесі Українки, 26</address>
+              <ul class="footer-list">
+                <li class="footer-item">
+                  <a class="footer-contact" href="info@devstudio.com"
+                    >info@devstudio.com</a>
+                </li>
+                <li class="footer-item">
+                  <a class="footer-contact" href="tel:380961111111"
+                    >+38 096 111 11 11</a>
+                </li>
+              </ul>
+          </div>
+          <div>
             <h3 class="footer-title">ПРИЄДНУЙТЕСЬ</h3>
             <ul class="footer-svg-list">
               <li class="footer-svg-item">
@@ -417,7 +442,7 @@
                 </a>
               </li>
             </ul>
-          </ul>
+          </div>
         </div>
       </section>
     </footer>
