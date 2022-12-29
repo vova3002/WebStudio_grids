@@ -15,6 +15,26 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/reset.css" />
+    <script>
+      const refs = {
+        openModalBtn: document.querySelector("[data-open-modal]"),
+        closeModalBtn: document.querySelector("[data-close-modal]"),
+        backdrop: document.querySelector("[data-backdrop]")
+      }
+      
+      refs.openModalBtn.addEventListener("click", toggleModal);
+      refs.closeModalBtn.addEventListener("click", toggleModal);
+      
+      refs.backdrop.addEventListener("click", logBackdropClick);
+      
+      function toggleModal() {
+        refs.backdrop.classList.toggle("is-hidden");
+      }
+      
+      function logBackdropClick() {
+        console.log("Це клік в бекдроп");
+      }
+    </script>
   </head>
   <body>
     <header class="header">
@@ -24,6 +44,7 @@
           <ul class="header-pages">
             <li class="header-item">
               <a class="header-link" href="./index.html">Студія</a>
+              <span class="header-line"></span>
             </li>
             <li class="header-item">
               <a class="header-link" href="./portfolio.html">Портфоліо</a>
@@ -59,26 +80,6 @@
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
           <button class="hero-button" type="button">Замовити послугу</button>
           <button class="overlay-button"></button>
-          <script>
-            const refs = {
-              openModalBtn: document.querySelector("[data-open-modal]"),
-              closeModalBtn: document.querySelector("[data-close-modal]"),
-              backdrop: document.querySelector("[data-backdrop]"),
-            };
-      
-            refs.openModalBtn.addEventListener("click", toggleModal);
-            refs.closeModalBtn.addEventListener("click", toggleModal);
-      
-            refs.backdrop.addEventListener("click", logBackdropClick);
-      
-            function toggleModal() {
-              refs.backdrop.classList.toggle("is-hidden");
-            }
-      
-            function logBackdropClick() {
-              console.log("Це клік в бекдроп");
-            }
-          </script>
         </div>
       </section>
       <section class="qualities-section">
