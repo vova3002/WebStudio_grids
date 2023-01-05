@@ -61,6 +61,7 @@
   height: 18px;
   fill: gray;
   margin-right: 10px;
+  margin-left: 30px;
 }
 
 .header-link::after {
@@ -99,7 +100,7 @@
   color: #212121;
 }
 
-.header-item:hover .header-svg-use, .header-item:hover .header-contact, .header-link:hover {
+.header-media-item:hover .header-svg-use, .header-media-item:hover .header-contact {
   color: #2196F3;
   fill: #2196F3;
 }
@@ -761,17 +762,17 @@
   flex-direction: column;
 }
 
+.footer-media-text {
+  color: #FFFFFF;
+  font-family: 'Roboto';
+}
+
 .footer-input {
   background: #2F303A;
   border: 1px solid #FFFFFF4D;
   width: 358px;
   height: 50px;
   margin-right: 10px;
-}
-
-.footer-media-text {
-  color: #FFFFFF;
-  font-family: 'Roboto';
 }
 
 .footer-form {
