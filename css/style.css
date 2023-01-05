@@ -761,17 +761,17 @@
   flex-direction: column;
 }
 
+.footer-media-text {
+  color: #FFFFFF;
+  font-family: 'Roboto';
+}
+
 .footer-input {
   background: #2F303A;
   border: 1px solid #FFFFFF4D;
   width: 358px;
   height: 50px;
   margin-right: 10px;
-}
-
-.footer-media-text {
-  color: #FFFFFF;
-  font-family: 'Roboto';
 }
 
 .footer-form {
