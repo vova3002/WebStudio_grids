@@ -31,29 +31,29 @@
   color: black;
 }
 
-.header-pages {
+.header-list {
   display: flex;
   justify-content: space-evenly;
+  height: 80px;
 }
 
 .header-item {
   margin-left: 55px;
+  padding-top: 32px;
 }
 
 .header-line {
-  background-color: #2196F3;
-  
+  background-color: #2196F3; 
 }
 
-.header-line::after {
-  position: absolute;
-  bottom: -33px;
-  right: 0px;
-  content: "";
-  width: 100%;
-  height: 4px;
-  background-color: var(--color-accent);
-  border-radius: 2px;
+.header-media-item {
+  height: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.header-links {
+  color: #2196F3;
 }
 
 .header-svg {
@@ -62,16 +62,6 @@
   fill: gray;
   margin-right: 10px;
   margin-left: 30px;
-}
-
-.header-link::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: #2196F3;
-  border-radius: 2px;
-  width: 100%;
-  height: 2px;
 }
 
 .header-item:nth-child(2) {
@@ -87,7 +77,10 @@
   letter-spacing: 0.02em;
   color: #212121;
   border-bottom: 4px solid #2196F3;
-  padding-bottom: 28px;
+}
+
+.header-link:hover {
+  color: #2196F3;
 }
 
 .header-link {
@@ -98,6 +91,14 @@
   line-height: 16px;
   letter-spacing: 0.02em;
   color: #212121;
+}
+
+.header-link, .header-contact {
+  transition: color 250ms cubic-bezier(0.39, 0.575, 0.565, 1) 50ms;
+}
+
+.header-svg, .header-svg-use {
+  transition: fill 250ms cubic-bezier(0.39, 0.575, 0.565, 1) 50ms,;
 }
 
 .header-media-item:hover .header-svg-use, .header-media-item:hover .header-contact {
@@ -192,6 +193,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease-in-out; 
 }
 
 .back-drop-form {
@@ -204,6 +206,7 @@
   padding: 40px;
   display: flex;
   justify-content: center;
+  filter: drop-shadow(2px 4px 6px black)
 }
 
 .is-hidden {
@@ -270,6 +273,7 @@
   line-height: 14px;
   letter-spacing: 0.01em;
   cursor: pointer;
+  transition: border 250ms cubic-bezier(0.165, 0.84, 0.44, 1) 100ms;
 }
 
 .back-drop-text-fill {
@@ -296,6 +300,7 @@
   width: 15px;
   height: 15px;
   transform: translate(15px, -30px);
+  transition: fill 250ms cubic-bezier(0.165, 0.84, 0.44, 1) 100ms;
 }
 
 .back-drop-button-send {
@@ -333,6 +338,7 @@
 .back-drop-svg {
   width: 18px;
   height: 18px;
+  transition: fill 250ms cubic-bezier(0.165, 0.84, 0.44, 1) 100ms;
 }
 
 /* back-drop-section-ends */
@@ -530,6 +536,10 @@
   fill: #AFB1B8;
 }
 
+.team-svg, .team-svg-use {
+  transition: fill 250ms cubic-bezier(0.39, 0.575, 0.565, 1) 50ms;
+}
+
 .team-svg-list {
   display: flex;
   justify-content: center;
@@ -542,6 +552,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 250ms cubic-bezier(0.39, 0.575, 0.565, 1) 50ms;
+  border-radius: 50%;
 }
 
 .team-svg-item:hover {
@@ -626,6 +638,7 @@
   color: #212121;
 }
 
+
 .client-item {
   display: flex;
   align-items: center;
@@ -652,10 +665,15 @@
   justify-content: center;
   align-items: center;
   background-color: #FFFFFF;
+  transition: border 250ms cubic-bezier(0.165, 0.84, 0.44, 1) 100ms;
 }
 
 .client-link:hover {
   border: 1px solid #2196F3;
+}
+
+.client-svg, .client-svg-use {
+  transition: fill 250ms cubic-bezier(0.39, 0.575, 0.565, 1) 25ms;
 }
 
 /*Client-section-end*/
@@ -682,6 +700,7 @@
   line-height: 24px;
   letter-spacing: 0.03em;
   color: darkgrey;
+  transition: color 250ms cubic-bezier(0.165, 0.84, 0.44, 1) 100msv;
 }
 
 .footer-title {
@@ -715,6 +734,7 @@
   align-items: center;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.165, 0.84, 0.44, 1) 100ms;
 }
 
 .footer-svg-item:hover {
