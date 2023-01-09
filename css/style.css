@@ -97,11 +97,11 @@
   transition: color 250ms cubic-bezier(0.39, 0.575, 0.565, 1) 50ms;
 }
 
-.header-svg, .header-svg-use {
-  transition: fill 250ms cubic-bezier(0.39, 0.575, 0.565, 1) 50ms,;
+.header-svg {
+  transition: fill 250ms cubic-bezier(0.39, 0.575, 0.565, 1) 50ms;
 }
 
-.header-media-item:hover .header-svg-use, .header-media-item:hover .header-contact {
+.header-media-item:hover .header-svg, .header-media-item:hover .header-contact {
   color: #2196F3;
   fill: #2196F3;
 }
@@ -530,14 +530,11 @@
 .team-svg {
   width: 20px;
   height: 20px;
+  transition: fill 250ms cubic-bezier(0.39, 0.575, 0.565, 1) 50ms;
 }
 
 .team-link {
   fill: #AFB1B8;
-}
-
-.team-svg, .team-svg-use {
-  transition: fill 250ms cubic-bezier(0.39, 0.575, 0.565, 1) 50ms;
 }
 
 .team-svg-list {
@@ -564,7 +561,7 @@
   align-items: center;
 }
 
-.team-svg-item:hover .team-svg-use {
+.team-svg-item:hover .team-svg {
   background:#2196F3;
   fill: #FFFFFF;
 }
