@@ -519,7 +519,6 @@
 .team-list__link {
   fill: #AFB1B8;
   background: none;
-}
 
 .team-list__text {
   font-family: 'Roboto';
@@ -763,6 +762,10 @@
   letter-spacing: 0.03em;
   color: #2196F3;
   margin-bottom: 20px;
+}
+
+.footer-social {
+  margin-left: 70px;
 }
 
 .footer-social {
