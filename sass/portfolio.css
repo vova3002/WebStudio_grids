@@ -1,4 +1,25 @@
-/*Header-section-start*/
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.client-section .container {
+  background: #FFFFFF;
+}
+
+.footer {
+  background: #2F303A;
+}
 
 .header .container {
   height: 80px;
@@ -11,7 +32,7 @@
 .header-section__web {
   display: flex;
   justify-content: flex-end;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -22,7 +43,7 @@
 }
 
 .header-section__logo {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -64,8 +85,8 @@
   margin-left: 50px;
 }
 
-.header-list__item:nth-child(2) {
-  font-family: 'Roboto';
+.header-list__item:nth-child(1) {
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -80,14 +101,14 @@
 }
 
 .header-list__link {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
   color: #212121;
-  transition: color 250ms cubic-bezier(0.39, 0.575, 0.565, 1) 25ms
+  transition: color 250ms cubic-bezier(0.39, 0.575, 0.565, 1) 25ms;
 }
 
 .header-media__contact {
@@ -114,7 +135,7 @@
 }
 
 .header-media__contact {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -126,10 +147,6 @@
 .header-media__contact:hover {
   color: #2196F3;
 }
-
-/*Header-section-end*/
-
-/*Buttons-section*/
 
 .buttons-section .container {
   background: #FFFFFF;
@@ -149,7 +166,7 @@
 }
 
 .buttons-list__items {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   line-height: 30px;
@@ -167,10 +184,6 @@
   background-color: #2196F3;
   color: #FFFFFF;
 }
-
-/*Button-section-end*/
-
-/*Poster-section*/
 
 .poster-list {
   display: flex;
@@ -191,7 +204,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -225,7 +238,7 @@
 }
 
 .poster-list__text {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -237,7 +250,7 @@
 }
 
 .poster-list__description {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -247,14 +260,9 @@
   margin: 0 24px;
 }
 
-
-/*Poster-section-end*/
-
-/*Footer-section-start*/
-
 .footer {
   background: #2F303A;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 700;
 }
 
@@ -321,12 +329,12 @@
   align-items: center;
 }
 
-.footer-contact:hover {
+.footer-social__contact:hover {
   color: #2196F3;
 }
 
-.footer-Web {
-  font-family: 'Raleway';
+.footer-info__web {
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -338,26 +346,6 @@
 
 .footer-social {
   margin-left: 70px;
-}
-
-.footer-logo {
-  font-family: 'Raleway';
-  color: #FFFFFF;
-}
-
-.footer-social__contact:hover {
-  color: #2196F3;
-}
-
-.footer-info__web {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
-  color: #2196F3;
-  margin-bottom: 20px;
 }
 
 .footer-social {
@@ -365,7 +353,7 @@
 }
 
 .footer-info__logo {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   color: #FFFFFF;
 }
 
@@ -382,13 +370,13 @@
 
 .footer-media__text {
   color: #FFFFFF;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   margin-bottom: 20px;
 }
 
 .footer-media-form__input {
   background: #2F303A;
-  border: 1px solid #FFFFFF4D;
+  border: 1px solid rgba(255, 255, 255, 0.3019607843);
   width: 358px;
   height: 50px;
   margin-right: 10px;
@@ -396,10 +384,6 @@
 
 .footer-media-form {
   display: flex;
-}
-
-.footer-item {
-  margin-top: 9px;
 }
 
 .footer-form {
@@ -427,6 +411,4 @@
   padding-bottom: 60px;
   display: flex;
   flex-wrap: wrap;
-}
-
-/*Footer-section-end*/
+}/*# sourceMappingURL=portfolio.css.map */
