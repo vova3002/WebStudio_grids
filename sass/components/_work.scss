@@ -24,10 +24,6 @@
   margin-left: 30px;
 }
 
-.work-list__item {
-  position: relative;
-}
-
 .work-list__text {
   position: absolute;
   bottom: 3px;
@@ -43,6 +39,9 @@
 
 .work-list {
   display: flex;
+  &__item {
+    position: relative;
+  }
 }
 
 .work-list__img {

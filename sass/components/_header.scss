@@ -16,7 +16,7 @@
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color: $accent-color;
     margin-right: 93px;
   }
   &__logo {
@@ -26,7 +26,7 @@
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
-    color: black;
+    color: $black-color;
   }
 }
 
@@ -48,7 +48,7 @@
       line-height: 16px;
       letter-spacing: 0.02em;
       color: #212121;
-      border-bottom: 4px solid $header-color;
+      border-bottom: 4px solid $accent-color;
       }
     }
   &__link {
@@ -59,20 +59,20 @@
     line-height: 16px;
     letter-spacing: 0.02em;
     color: #212121;
-    transition: color 250ms $header-transition 25ms;
+    transition: color 250ms $transition 25ms;
     &:hover {
-      color: $header-color;
+      color: $accent-color;
     }
   }
   &__links {
-    color: $header-color;
+    color: $accent-color;
   }
 }
 
 .header-media__item:hover {
   .header-media__icon, .header-media__contact {
-    color: $header-color;
-    fill: $header-color;
+    color: $accent-color;
+    fill: $accent-color;
   }
 }
 // .header-media__item:hover .header-media__icon, .header-media__item:hover .header-media__contact {
@@ -97,17 +97,17 @@
     line-height: 16px;
     letter-spacing: 0.02em;
     color: $header-contact;
-    transition: color 250ms $header-transition 50ms;
+    transition: color 250ms $transition 50ms;
     &:hover {
-      color: $header-color;
+      color: $accent-color;
     }
   }
   &__icon {
     width: 20px;
     height: 18px;
-    fill: $header-contact;
+    fill: $grey-color;
     margin-right: 10px;
     margin-left: 30px;
-    transition: fill 250ms $header-transition 50ms;
+    transition: fill 250ms $transition 50ms;
   }
 }
