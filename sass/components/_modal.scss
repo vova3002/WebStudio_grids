@@ -1,143 +1,111 @@
 .backdrop {
-  width: 100%;
-  height: 100%;
+  @include width-height(100%, 100%);
   position: fixed;
   left: 0;
   top: 0;
-  background: rgba(0, 0, 0, 0.2);
+  background: $black-color-rgba;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.3s ease-in-out; 
+  transition: all 0.3s ease-in-out;
 }
 
 .backdrop-form {
-  width: 528px;
-  height: 581px;
-  background-color: $hero-color;
+  @include width-height(528px, 581px);
+  padding: 40px;
+  background-color: $bright-color;
   display: flex;
   flex-direction: column;
   position: relative;
-  padding: 40px;
   display: flex;
   justify-content: center;
-  filter: drop-shadow(2px 4px 6px black);
+  filter: drop-shadow(2px 4px 6px $black-color);
   &__title {
-    font-family: 'Roboto';
-    margin-left: 10px;
     margin-bottom: 13px;
+    margin-left: 10px;
     display: flex;
     justify-content: center;
   }
   &__text {
-    text-align: start;
     margin-top: 13px;
-    font-family: 'Roboto';
+    text-align: start;
   }
   &__icon {
     transform: translate(15px, -30px);
-    transition: fill 250ms $modal-transition 100ms;
-    width: 18px;
-    height: 18px;
+    transition: fill 250ms $transition 100ms;
+    @include width-height(18px, 18px);
     &:hover {
-      fill: $header-color;
+      fill: $accent-color;
     }
   }
   &__icon-close {
-    width: 18px;
-    height: 18px;
-    transition: fill 250ms cubic-bezier(0.39, 0.575, 0.565, 1) 25ms;
+    @include width-height(18px, 18px);
+    transition: fill 250ms $transition 100ms;
   }
   &__info {
-    font-family: 'Roboto';
-    color: #757575;
-    margin: 0 0 4px 0;
-    font-weight: 400;
-    font-size: 12px;
-  }
+    @include font;
+    margin-left: 4px;
+    color: $grey-color;
+    }
   &__button {
-    border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    @include border(1px solid $black-color-rgba, 50%);
     padding: 5px;
     top: 8px;
     right: 8px;
-    background: #FFFFFF;
+    background: $bright-color;
     display: flex;
     position: absolute;
     cursor: pointer;
     &:hover {
-      fill: $header-color;
+      fill: $accent-color;
     }
   }
   &__input {
     display: flex;
     flex-direction: column;
     &:hover {
-      fill: $header-color;
+      fill: $accent-color;
     }
   }
   &__fill {
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    padding-left: 40px;
-    height: 40px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
-    cursor: pointer;
-    transition: border 250ms cubic-bezier(0.165, 0.84, 0.44, 1) 100ms;
+    @include fill(auto, 40px, 0 0 0 40px);
+    @include font(14px, 0);
+    @include border(1px solid $black-color-rgba, 4px);
+    transition: border 250ms $transition 100ms;
     &:hover {
-      border: 1px solid $header-color;
+      border: 1px solid $accent-color;
     }
   }
   &__text-fill {
-    font-family: 'Roboto';
-    width: 508px;
-    height: 120px;
-    padding: 12px 16px;
-    cursor: pointer;
+    @include fill(508px, 120px, 12px 16px);
   }
   &__box {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    @include text-filter(400, 14px, 24px, 0.03em);
+    margin-top: 20px, 30px;
     display: flex;
     align-items: center;
   }
   &__button-send {
-    font-family: 'Roboto';
+    @include width-height(200px, 50px);
+    @include border(1px solid $bright-color);
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    height: 50px;
-    background: $modal-color;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: 1px solid $hero-color;
-    color: $hero-color;
-    margin: 0 auto;
+    background: $accented-color;
+    box-shadow: 0px 4px 4px $darker-rgba-color;
+    color: $bright-color;
   }
   &__checkbox {
-    width: 16px;
-    height: 15px;
+    @include width-height(15px, 16px);
     margin-right: 9px;
   }
   &__agree {
-    font-family: 'Roboto';
-    color: $header-contact;
+    color: $grey-color;
   }
   &__rule {
-    font-family: 'Roboto';
     text-decoration: underline;
-    color: $header-color;
+    color: $accent-color;
   }
 }
 

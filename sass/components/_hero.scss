@@ -1,42 +1,33 @@
 .hero-section {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+  @extend %container-display-flexes;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/img-2/Img.jpg);
+  background-image: linear-gradient(
+    $rgba-colorless,
+    $rgba-colorless
+    ),
+    url(../img/img-2/Img.jpg);
   &__button {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    line-height: 30px;
-    background-color: $hero-background-color;
-    color: $hero-button-color;
-    height: 50px;
-    width: 200px;
+    @include text-filter(700, 16px, 30px, 0);
+    @include width-height(200px, 50px);
+    @include border (2px, 5px);
     margin-left: 500px;
-    border-radius: 5px;
-    box-shadow: 2px 2px 2px 2px $hero-box-shadow;
-    border: 2px;
-    transition: color 250ms $hero-transition 25ms ,background-color 1s $hero-transition 100ms;
+    background-color: $background-color;
+    color: $button-color;
+    box-shadow: 2px 2px 2px 2px $box-shadow;
+    transition: color 250ms $transition 25ms,
+      background-color 1s $transition 100ms;
     &:hover {
-      background-color: $header-color;
-      color: $hero-color;
+      background-color: $accent-color;
+      color: $bright-color;
     }
   }
   &__title {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 60px;
+    @include text-filter(900, 44px, 60px, 0.06em);
     text-align: center;
-    letter-spacing: 0.06em;
     text-transform: uppercase;
     justify-content: space-evenly;
     display: flex;
-    color: $hero-color;
+    color: $bright-color;
   }
 }

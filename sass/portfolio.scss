@@ -1,6 +1,9 @@
 @import "./base/reset";
+@import "./base/command";
 @import "./utilis/variables";
-@import "./components/header-portfolio";
+@import "./utilis/placeholders";
+@import "./utilis/mixin";
+@import "./components/header";
 @import "./components/buttons";
 @import "./components/poster";
 @import "./components/footer";

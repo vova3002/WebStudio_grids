@@ -1,23 +1,15 @@
 .team-section__title {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
+  @include text-filter(700, 36px, 42px, 0.03em);
+  margin-bottom: 50px;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: $qualities-color;
+  color: $color;
 }
 
 .team-section .container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  background: $qualities-background-color;
-  padding-bottom: 115px;
+  @extend %container-display-flexes;
   padding-top: 94px;
+  padding-bottom: 115px;
+  background: $background-color-bright;
   box-shadow: 0 2px 1px $black-color;
 }
 
@@ -25,46 +17,28 @@
   display: flex;
   &__item {
     margin-left: 30px;
-    background: $hero-color;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    padding-bottom: 30px;
+    background: $bright-color;
+    box-shadow: $also-large-rgba-color;
     border-radius: 0px 0px 4px 4px;
     text-align: center;
-    padding-bottom: 30px;
-    &:hover {
-      background: $accent-color;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
   }
   &__link {
-    fill: $team-color;
+    fill: $background-color-bright;
     background: none;
   }
   &__person {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.03em;
-    color: $header-contact;
+    @include text-filter (400, 16px, 19px, 0.03em);
     padding-bottom: 10px;
+    color: $color;
   }
   &__text {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.03em;
-    color: $qualities-color;
+    @include text-filter (400, 16px, 19px, 0.03em);
     padding-bottom: 16px;
+    color: $grey-color;
   }
   &__img {
-    width: 270px;
-    height: 260px;
+    @include width-height(270px, 260px);
   }
 }
 
@@ -73,20 +47,28 @@
   justify-content: center;
   gap: 10px;
   &__item {
-    width: 44px;
-    height: 44px;
+    @include width-height(44px, 44px);
     display: flex;
     justify-content: center;
     align-items: center;
     transition: background-color 250ms $transition 50ms;
     border-radius: 50%;
+    &:hover {
+      background-color: $accent-color;
+    }
   }
   &__icon {
-    width: 20px;
-    height: 20px;
+    @include width-height;
     transition: fill 250ms $transition 50ms;
+    fill: $rain-color;
+    &:hover {
+      fill: $bright-color;
+    }
   }
-  &__link {
-    color: $team-color;
+}
+
+.team-social__item:hover {
+  .team-social__icon {
+    fill: $bright-color;
   }
 }
