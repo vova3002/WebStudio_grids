@@ -11,7 +11,9 @@
 }
 
 .backdrop-form {
-  @include width-height(528px, 581px);
+  @include width-height(450px, 609px);
+  width: 450px;
+  height: 609px;
   padding: 40px;
   background-color: $bright-color;
   display: flex;
@@ -20,15 +22,33 @@
   display: flex;
   justify-content: center;
   filter: drop-shadow(2px 4px 6px $black-color);
+  @media screen and (min-width: 1200px) {
+    @include width-height(528px, 581px);
+  }
   &__title {
+    @include text-filter(700, 20px, 30px, 0.03em);
     margin-bottom: 13px;
     margin-left: 10px;
     display: flex;
     justify-content: center;
+    @media screen and (min-width: 1200px) {
+      @include text-filter(700, 20px, 23px, 0.03em);
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 23px;
+      letter-spacing: 0.03em;
+    }
   }
   &__text {
     margin-top: 13px;
     text-align: start;
+    width: auto;
+    height: 120px;
+    padding-top: 12px;
+    padding-left: 16px;
+    @media screen and (min-width: 1200px) {
+      height: 193.98px;
+    }
   }
   &__icon {
     transform: translate(15px, -30px);
@@ -68,7 +88,7 @@
     }
   }
   &__fill {
-    @include fill(auto, 40px, 0 0 0 40px);
+    @include fill(370, 40px, 0 0 0);
     @include font(14px, 0);
     @include border(1px solid $black-color-rgba, 4px);
     transition: border 250ms $transition 100ms;
@@ -99,9 +119,13 @@
   &__checkbox {
     @include width-height(15px, 16px);
     margin-right: 9px;
+    margin-top: 20px;
+    margin-bottom: 31px;
   }
   &__agree {
     color: $grey-color;
+    margin-top: 20px;
+    margin-bottom: 31px;
   }
   &__rule {
     text-decoration: underline;

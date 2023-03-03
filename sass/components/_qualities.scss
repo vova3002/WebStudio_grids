@@ -21,23 +21,38 @@
 }
 
 .qualities-list {
+  gap: 30px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   &__item {
-    margin: 30px;
+    width: 450px;
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
     &::before {
       content: "";
-      @include width-height(270px, 120px);
+      @include width-height(450px, 120px);
       @include border(none);
       margin-bottom: 30px;
       background: $background-color-bright;
       display: block;
       background-repeat: no-repeat;
       background-position: center;
+      @media screen and (min-width: 768px) {
+        width: 354px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      @media screen and (min-width: 1200px) {
+        width: 270px;
+        display: flex;
+        flex-wrap: wrap;
+      }
     }
-  }
-  &__item {
-    margin: 20px;
   }
   &__title {
     @include text-filter(700, 14px, 16px, 0.03em);
@@ -50,5 +65,12 @@
   &__text {
     @include text-filter;
     color: $grey-color;
+    width: 452px;
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 }
