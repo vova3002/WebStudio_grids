@@ -7,9 +7,15 @@
 
 .client-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
   &__item {
     @extend %flex-center;
-    margin-left: 30px;
   }
   &__icon {
     @include width-height(41px, 42.6px);
@@ -19,9 +25,17 @@
   &__link {
     @extend %flex-center;
     @include border(1px solid $rain-color);
-    @include width-height(170px, 90px);
     background-color: $bright-color;
     transition: border 250ms $transition 100ms;
+    width: 210px;
+    height: 92px;
+    @media screen and (min-width: 768px) {
+      width: 226px;
+      height: 92px;
+    }
+    @media screen and (min-width: 1200px) {
+      @include width-height(170px, 90px);
+    }
     &:hover {
       border: 1px solid $accent-color;
     }

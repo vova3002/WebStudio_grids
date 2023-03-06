@@ -655,9 +655,15 @@ body {
 
 .client-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
-.client-list__item {
-  margin-left: 30px;
+@media screen and (min-width: 1200px) {
+  .client-list {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
 .client-list__icon {
   width: 41px;
@@ -668,10 +674,22 @@ body {
 .client-list__link {
   border: 1px solid #AFB1B8;
   border-radius: 4px;
-  width: 170px;
-  height: 90px;
   background-color: #FFFFFF;
   transition: border 250ms cubic-bezier(0.39, 0.575, 0.565, 1) 100ms;
+  width: 210px;
+  height: 92px;
+}
+@media screen and (min-width: 768px) {
+  .client-list__link {
+    width: 226px;
+    height: 92px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client-list__link {
+    width: 170px;
+    height: 90px;
+  }
 }
 .client-list__link:hover {
   border: 1px solid #2196F3;
