@@ -10,18 +10,33 @@
   padding-top: 94px;
   padding-bottom: 115px;
   background: $background-color-bright;
-  box-shadow: 0 2px 1px $black-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team-list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
   &__item {
-    margin-left: 30px;
     padding-bottom: 30px;
     background: $bright-color;
     box-shadow: $also-large-rgba-color;
     border-radius: 0px 0px 4px 4px;
     text-align: center;
+    width: 100%;
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
   &__link {
     fill: $background-color-bright;
@@ -30,15 +45,13 @@
   &__person {
     @include text-filter (400, 16px, 19px, 0.03em);
     padding-bottom: 10px;
+    margin-top: 30px;
     color: $color;
   }
   &__text {
     @include text-filter (400, 16px, 19px, 0.03em);
     padding-bottom: 16px;
     color: $grey-color;
-  }
-  &__img {
-    @include width-height(270px, 260px);
   }
 }
 
