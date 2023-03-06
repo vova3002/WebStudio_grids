@@ -487,6 +487,17 @@ body {
   }
 }
 
+.work-section .container {
+  padding-top: 50px;
+  padding-bottom: 94px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .work-section .container {
+    display: block;
+  }
+}
+
 .work-section__title {
   font-weight: 700;
   font-size: 36px;
@@ -495,11 +506,6 @@ body {
   margin-bottom: 50px;
   color: #212121;
   text-align: center;
-}
-
-.work-section .container {
-  padding-top: 50px;
-  padding-bottom: 94px;
 }
 
 .work-list {
@@ -537,11 +543,11 @@ body {
   text-align: center;
   bottom: 3px;
   left: 0;
-  width: 100%;
-  height: 0;
   background: #FFFFFF;
   color: #FFFFFF;
   height: 70px;
+  width: 100%;
+  height: 0;
   font-weight: 700;
   font-size: 0;
   line-height: 0;
