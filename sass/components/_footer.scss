@@ -12,6 +12,17 @@
   padding-top: 60px;
   padding-bottom: 60px;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 
 .footer-list {
@@ -29,11 +40,19 @@
 }
 
 .footer-social {
-  margin-left: 70px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
+  margin-top: 60px;
+  margin-bottom: 60px;
   &__title {
     @include text-filter(700, 14px, 16px, 0.03em);
     margin-bottom: 20px;
     color: $bright-color;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+      text-align: start;
+    }
   }
 }
 
@@ -76,21 +95,33 @@
 }
 
 .footer-media {
-  margin-left: 93px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
   &__text {
     margin-bottom: 20px;
     color: $bright-color;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+      text-align: start;
+    }
   }
 }
 
 .footer-media-form {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
   &__input {
-    @include width-height(358px, 50px);
+    @include width-height(100%, 50px);
     margin-right: 10px;
     background: $black-ground;
     @include border(1px solid rgba(255, 255, 255, 0.3));
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    @media screen and (min-width: 1200px) {
+      @include width-height(358px, 50px);
+    }
   }
   &__button {
     @extend %flex-center;
