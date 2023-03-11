@@ -78,6 +78,12 @@
 }
 
 .footer-info {
+  @media screen and (min-width: 768px) {
+    margin-right: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 0;
+  }
   &__logo {
     color: $bright-color;
   }
