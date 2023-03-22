@@ -66,6 +66,7 @@ body {
   height: 80px;
   display: flex;
   align-items: center;
+  border: #ECECEC 1px solid;
 }
 @media screen and (min-width: 768px) {
   .header .container {
