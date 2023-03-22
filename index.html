@@ -19,9 +19,59 @@
     <header class="header">
       <section class="header__section">
         <div class="container">
-          <a href="/" class="header-section__web">Web
-            <span class="header-section__logo">Studio</span>
+          <a href="/" class="header-section__web"
+            >Web<span class="header-section__logo">Studio</span>
           </a>
+          <button class="header-modal__open" data-menu-open>
+            <svg class="header-modal__icon">
+              <use href="./img/img-2/symbol-defs.svg#icon-menu-button"></use>
+            </svg>
+          </button>
+          <div class="header-modal is-hidden" data-menu>
+            <ul class="header-modal__list">
+              <li class="header-modal__items">
+                <button class="header-modal__close" data-menu-close>
+                  <svg class="header-modal__icon">
+                    <use href="./img/img-2/symbol-defs.svg#icon-close-button"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="header-modal__items">
+                <a href="./index.html" class="header-modal__link">Студія</a>
+              </li>
+              <li class="header-modal__items">
+                <a href="./portfolio.html" class="header-modal__link">Портфолія</a>
+              </li>
+              <li class="header-modal__items">
+                <a href="./index.html" class="header-modal__link">Контакти</a>
+              </li>
+            </ul>
+            <ul class="header-info">
+              <li class="header-info__item">
+                <a class="header-info__link header-number" href="+38 096 111 11 11">+38 096 111 11 11</a>
+              </li>
+              <li class="header-info__item">
+                <a class="header-info__link" href="info@devstudio.com">info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="header-social">
+              <li class="header-social__item">
+                <a class="header-social__link" href="https://www.instagram.com/">Instagram</a>
+              </li>
+              <li class="header-social__item">
+                |
+                <a class="header-social__link" href="https://twitter.com/home">Twitter</a>
+              </li>
+              <li class="header-social__item">
+                |
+                <a class="header-social__link" href="https://www.facebook.com/facebook/">Facebook</a>
+              </li>
+              <li class="header-social__item">
+                |
+                <a class="header-social__link" href="https://www.linkedin.com/">Linkedin</a>
+              </li>
+            </ul>
+          </div>
           <ul class="header-list">
             <li class="header-list__item">
               <a class="header-list__link header-list__bar" href="./index.html">Студія</a>
@@ -522,10 +572,9 @@
       function toggleModal() {
         refs.backdrop.classList.toggle("is-hidden");
       }
-
-      function logBackdropClick() {
-        console.log("Це клік в бекдроп");
-      }
-    </script>
+      </script>
+      <script src="./js/menu.js">
+        
+      </script>
   </body>
 </html>
