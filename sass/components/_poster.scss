@@ -1,3 +1,8 @@
+.poster-section {
+  display: flex;
+  flex-direction: column;
+}
+
 .poster-list {
   margin-bottom: 94px;
   display: flex;
@@ -7,7 +12,7 @@
   &__item {
     padding-bottom: 20px;
     border: 1px solid $bright-grey;
-    width: 370px;
+    width: 354px;
     cursor: pointer;
     &:hover {
       border: 1px solid $bright-color;
@@ -32,10 +37,13 @@
     @include text-filter(700, 18px, 36px, 0.06em);
     margin: 16px, none, 24, 24;
     color: $color;
+    padding-left: 24px;
+    margin-top: 20px;
   }
   &__description {
     @include text-filter(400, 16px, 30px, 0.03em);
     color: $grey-color;
+    padding-left: 24px;
   }
 }
 

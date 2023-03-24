@@ -5,6 +5,10 @@
   background: $bright-color;
 }
 
+.client-section {
+  display: flex;
+}
+
 .client-list {
   display: flex;
   flex-wrap: wrap;
