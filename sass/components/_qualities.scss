@@ -14,6 +14,10 @@
   background-image: url(../img/img-2/astronaut-1.png);
 }
 
+.qualities-section {
+  display: flex;
+}
+
 .qualities-section .container {
   @extend %container-display-flexes;
   padding-top: 94px;

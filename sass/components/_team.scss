@@ -5,6 +5,10 @@
   color: $color;
 }
 
+.team-section {
+  display: flex;
+}
+
 .team-section .container {
   @extend %container-display-flexes;
   padding-top: 94px;

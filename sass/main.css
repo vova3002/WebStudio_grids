@@ -78,8 +78,10 @@ body {
   border: 1px solid #ECECEC;
 }
 
-.header-section__web {
+.header-section {
   display: flex;
+}
+.header-section__web {
   justify-content: flex-end;
   font-weight: 700;
   font-size: 26px;
@@ -217,7 +219,7 @@ body {
 }
 .header-list__bar {
   border-bottom: 4px solid #2196F3;
-  margin-top: 2px;
+  margin-top: 3px;
   display: block;
   width: 100%;
   height: 42px;
@@ -340,6 +342,10 @@ body {
     line-height: 60px;
     letter-spacing: 0.06em;
   }
+}
+
+.hero-section {
+  display: flex;
 }
 
 .backdrop {
@@ -531,6 +537,10 @@ body {
   background-image: url(../img/img-2/astronaut-1.png);
 }
 
+.qualities-section {
+  display: flex;
+}
+
 .qualities-section .container {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -673,6 +683,10 @@ body {
   color: #212121;
 }
 
+.team-section {
+  display: flex;
+}
+
 .team-section .container {
   padding-top: 94px;
   padding-bottom: 115px;
@@ -777,6 +791,10 @@ body {
   background: #FFFFFF;
 }
 
+.client-section {
+  display: flex;
+}
+
 .client-list {
   display: flex;
   flex-wrap: wrap;
@@ -844,7 +862,11 @@ body {
   justify-content: flex-end;
 }
 
-.footer-section .container {
+.footer-section {
+  display: flex;
+}
+
+.footer .container {
   padding-top: 60px;
   padding-bottom: 60px;
   display: flex;
@@ -855,12 +877,12 @@ body {
   text-align: center;
 }
 @media screen and (min-width: 768px) {
-  .footer-section .container {
+  .footer .container {
     flex-direction: row;
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer-section .container {
+  .footer .container {
     text-align: start;
   }
 }
@@ -881,8 +903,14 @@ body {
 }
 
 .footer-social {
-  margin-top: 60px;
   margin-bottom: 60px;
+  margin-top: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer-social {
+    margin-bottom: auto;
+    margin-top: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-social {
@@ -927,11 +955,13 @@ body {
 @media screen and (min-width: 768px) {
   .footer-info {
     margin-right: 165px;
+    margin-bottom: 42px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-info {
     margin-right: 0;
+    margin-bottom: 0;
   }
 }
 .footer-info__logo {
@@ -958,9 +988,14 @@ body {
 @media screen and (min-width: 1200px) {
   .footer-media {
     margin-left: 93px;
+    margin-bottom: auto;
   }
 }
 .footer-media__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
   margin-bottom: 20px;
   color: #FFFFFF;
   text-align: center;
@@ -980,6 +1015,7 @@ body {
 .footer-media-form__input {
   width: 100%;
   height: 50px;
+  padding-left: 16px;
   margin-right: 10px;
   background: #2F303A;
   border: 1px solid rgba(255, 255, 255, 0.3);
