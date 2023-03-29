@@ -8,6 +8,10 @@
   }
 }
 
+.work-section {
+  display: flex;
+}
+
 .work-section__title {
   @include text-filter (700, 36px, 42px, 0.03em);
   margin-bottom: 50px;
