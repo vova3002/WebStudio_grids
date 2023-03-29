@@ -3,9 +3,6 @@
   display: flex;
   align-items: center;
   border: #ECECEC 1px solid;
-  @media screen and (min-width: 768px) {
-    justify-content: space-evenly;
-  }
 }
 
 .header-line {
@@ -18,8 +15,10 @@
     justify-content: flex-end;
     @include text-filter(700, 26px, 31px, 0.03em);
     color: $accent-color;
-    margin-right: 93px;
     font-family: "Raleway";
+    @media screen and (min-width: 1200px) {
+      margin-left: 215px;
+    }
   }
   &__logo {
     color: $black-color;
@@ -46,7 +45,8 @@
     border: none;
     background-color: transparent;
     margin-left: auto;
-    margin-right: 20px;
+    margin-right: 32px;
+    margin-top: 13px;
     cursor: pointer;
   }
   &__open {
@@ -183,12 +183,13 @@
   position: fixed;
   top: 0;
   left: 0;
-
   width: 100%;
   height: 100%;
   padding: 15px;
-
   background-color: white;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .is-hidden {
