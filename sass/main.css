@@ -294,7 +294,7 @@ body {
 }
 
 .hero-section {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/img-2/Img.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   padding-top: 118px;
   padding-bottom: 118px;
   background-size: cover;
@@ -685,6 +685,7 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
+  margin-bottom: 50px;
 }
 
 .team-section {
