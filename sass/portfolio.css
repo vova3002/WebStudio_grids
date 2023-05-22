@@ -310,8 +310,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .buttons-list {
-    justify-content: center;
-    gap: 8;
+    gap: 8px;
   }
 }
 .buttons-list__items {
@@ -321,6 +320,7 @@ body {
   letter-spacing: 0;
   border: none;
   border-radius: 4px;
+  width: calc((100% - 3 * _) / 3);
   padding: 6px 23px;
   margin-left: 8px;
   color: #212121;
@@ -347,19 +347,29 @@ body {
 
 .poster-list {
   margin-bottom: 94px;
+  flex-direction: row;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   justify-content: center;
   gap: 15px;
 }
 .poster-list__item {
   padding-bottom: 20px;
   border: 1px solid #EEEEEE;
-  width: 354px;
   cursor: pointer;
+  width: calc((100% - 1 * _) / 1);
 }
-.poster-list__item:hover {
+@media screen and (min-width: 768px) {
+  .poster-list__item {
+    width: calc((100% - 2 * _) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .poster-list__item {
+    width: calc((100% - 9 * _) / 9);
+  }
+}
+.poster-list:hover {
   border: 1px solid #FFFFFF;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }

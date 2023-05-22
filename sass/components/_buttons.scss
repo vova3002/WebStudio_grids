@@ -13,12 +13,12 @@
   flex-wrap: wrap;
   gap: 15px 8px;
   @media screen and (min-width: 768px) {
-    justify-content: center;
-    gap: 8;
+    gap: 8px;
   }
   &__items {
     @include text-filter(500, 16px, 30px, 0);
     @include border(none, 4px);
+    @include grids-item(3, _);
     padding: 6px 23px;
     margin-left: 8px;
     color: $color;

@@ -4,21 +4,25 @@
 
 .poster-list {
   margin-bottom: 94px;
-  display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
-  gap: 15px;
+  @include grids-list(15px);
   &__item {
     padding-bottom: 20px;
     border: 1px solid $bright-grey;
-    width: 354px;
     cursor: pointer;
+    @include grids-item(1, _);
+    @media screen and (min-width: 768px) {
+      @include grids-item(2, _);
+    }
+    @media screen and (min-width: 1200px) {
+      @include grids-item(9, _);
+    }
+    }
     &:hover {
       border: 1px solid $bright-color;
       box-shadow: $large-rgba-color;
     }
-  }
+
   &__overlay {
     position: relative;
     display: flex;

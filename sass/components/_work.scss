@@ -20,9 +20,10 @@
 }
 
 .work-list {
-  display: flex;
+  @include grids-list(0);
   &__item {
     position: relative;
+    @include grids-item(3, 30px);
     &:not(:first-child) {
       margin-left: 30px;
     }

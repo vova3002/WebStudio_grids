@@ -18,9 +18,7 @@
 }
 
 .team-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  @include grids-list(30px);
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-wrap: nowrap;
@@ -31,15 +29,13 @@
     box-shadow: $also-large-rgba-color;
     border-radius: 0px 0px 4px 4px;
     text-align: center;
-    width: 100%;
-    @media screen and (min-width: 480px) {
-      width: 450px;
-    }
+    @include grids-item(2, _);
     @media screen and (min-width: 768px) {
       width: 354px;
+      @include grids-item(2, 30px);
     }
     @media screen and (min-width: 1200px) {
-      width: 270px;
+      @include grids-item(4, 30px);
     }
   }
   &__link {
